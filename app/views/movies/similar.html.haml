@@ -1,0 +1,10 @@
+-# in app/views/movies/similar.html.haml
+
+%h2 Movies Directed by #{@movie.director}
+
+%ul#movies
+ - @movies.each do |movie|
+   %li= movie.title
+     
+= link_to 'Back to movie list', movies_path
+
